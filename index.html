@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Profesional – Kendra Romero</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            background: #f7f9fc;
+            color: #2b2b2b;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            color: #1a365d;
+        }
+
+        h2 {
+            border-bottom: 2px solid #1a365d;
+            padding-bottom: 6px;
+            margin-top: 50px;
+        }
+
+        p, li {
+            line-height: 1.6;
+            text-align: justify;
+            hyphens: auto;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 260px;
+            height: 100%;
+            background: #1a365d;
+            color: white;
+            padding: 40px 25px;
+            box-sizing: border-box;
+            border-right: 3px solid #0f223d;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            font-size: 22px;
+            letter-spacing: 0.5px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #d7e6ff;
+            text-decoration: none;
+            margin: 14px 0;
+            font-size: 16px;
+            padding: 6px 0;
+            transition: 0.2s;
+        }
+
+        .sidebar a:hover {
+            color: #ffffff;
+            padding-left: 4px;
+        }
+
+        /* Main content */
+        .content {
+            margin-left: 300px;
+            padding: 50px;
+            max-width: 900px;
+        }
+
+        /* Cards */
+        .section-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+        }
+
+        /* Word-like bullet style */
+        .word-bullets {
+            list-style-type: "• ";
+            padding-left: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                border-right: none;
+            }
+            .content {
+                margin-left: 0;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <a href="#cover">Carta de Presentación</a>
+    <a href="#cv">Curriculum Vitae</a>
+    <a href="#degrees">Formación</a>
+    <a href="#certifications">Certificados</a>
+</div>
+
+<!-- Main Content -->
+<div class="content">
+
+<!-- HEADER WITH PHOTO -->
+<div style="
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 40px;
+">
+    <img src="foto.jpg" alt="Profile Photo" style="
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    ">
+
+    <div>
+        <h1 style="margin: 0; font-size: 32px; color: #1a365d;">
+            Kendra Gabriela Romero Gutiérrez
+        </h1>
+        <p style="margin: 6px 0 0 0; font-size: 16px; color: #444;">
+            Ingeniera de Desarrollo Software
+        </p>
+    </div>
+</div>
+
+<!-- DOWNLOAD BUTTONS -->
+<div style="
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+">
+    <a href="Carta_presentacion.pdf" download style="
+        background: #1a365d;
+        color: white;
+        padding: 12px 20px;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 15px;
+    ">Descargar Carta de Presentación (PDF)</a>
+
+    <a href="CV_Celso_Gonzalez_ES.pdf" download style="
+        background: #1a365d;
+        color: white;
+        padding: 12px 20px;
+        text-decoration: none;
+        border-radius: 6px;
+        margin-right: 15px;
+        font-size: 15px;
+    ">Descargar Curriculum Vitae (PDF)</a>
+
+</div>
+
+    <!-- COVER LETTER SECTION -->
+    <section id="cover" class="section-card">
+        <h2>Carta de Presentación</h2>
+
+<p>Me gustaría expresar mi interés en la posición de ingeniera en telecomunicaciones. Tras revisar en detalle las responsabilidades del puesto, considero que mi experiencia en sistemas embebidos, redes de comunicaciones y pruebas FAT/SAT en entornos ferroviarios encaja de forma muy sólida con las necesidades del rol.</p>
+<p>Actualmente trabajo como Software Development Engineer en Hitachi Rail, dentro del desarrollo del producto DCA (Distributed Control Architecture). Aunque mi rol está orientado al desarrollo, mi trabajo diario incluye una parte esencial de comunicaciones internas y externas del sistema, así como la configuración y verificación de protocolos de red como NTP, SNMP, OPC UA y servicios asociados a la sincronización y monitorización. Además, participo en funcionalidades críticas como la descarga remota de software, basada en protocolos seguros (HTTP/HTTPS, TLS) y mecanismos de integridad y autenticación. Todo ello se apoya en un sistema de arranque y operación basado en Linux, donde realizo tareas de configuración, análisis y validación tanto a nivel de red como de ciberseguridad (IEC 62443).</p>
+<p>En este contexto, realizo de forma habitual tareas directamente alineadas con el puesto: redacción de documentación técnica, diseño de arquitecturas de red, configuración de equipamiento y servicios de comunicaciones, análisis de tráfico con Wireshark, ejecución de pruebas FAT en laboratorio y soporte técnico durante SAT en campo. Mi experiencia práctica en redes incluye DSCP, VLAN, QoS, routing IP y protocolos TCP/UDP, la cual se complementa con mi dominio de Linux y scripting, herramientas que utilizo tanto para integración como para automatización de procesos.</P>
+<p>He trabajado de forma continua con equipos internacionales y multidisciplinares, lo que me ha permitido desarrollar una alta capacidad de coordinación técnica. Me motiva especialmente la posibilidad de integrarme en un equipo especializado en telecomunicaciones, donde pueda aportar mi experiencia en sistemas críticos y, al mismo tiempo, seguir desarrollándome en el ámbito de redes y equipamiento de comunicaciones.</p>
+<p>Agradezco su tiempo y consideración. Estaré encantada de ampliar cualquier información durante una entrevista.</p>
+
+<p>Atentamente,</p>
+<p>Kendra Gabriela Romero Gutiérrez</p>
+
+
+    </section>
+
+    <!-- CV SECTION -->
+    <section id="cv" class="section-card">
+        <h2>Curriculum Vitae</h2>
+
+        <h3>Resumen</h3>
+        <p>Ingeniero de Software y Automatización con sólida experiencia en el desarrollo de sistemas embebidos y comunicaciones en entornos Linux dentro de sectores regulados (EN50128/EN50129). Amplia experiencia en el ciclo completo del producto: captura de requisitos, diseño, desarrollo, integración y verificación en módulos interconectados. Conocimientos avanzados en redes (VLAN, QoS, routing IP), protocolos TCP/UDP, TLS y HTTP, y análisis de tráfico mediante Wireshark. Acostumbrada a trabajar en equipos internacionales, con enfoque en la robustez del sistema, la calidad del software y la resolución de incidencias complejas.</p>
+        <h3>Experiencia Profesional</h3>
+        <h3 style="text-align: right;">Software Development Engineer 
+        <br style="text-align: right;">Hitachi Rail — Octubre 2023 – Presente</h3>
+
+        <ul class="word-bullets">
+            <li>Desarrollo y mantenimiento de software embebido en C/C++ y scripting para controladores de elementos ferroviarios (DCA, Distributed Control Architecture), cumpliendo estándares como MISRA, AUTOSAR, EN50128 y EN50129.</li>
+            <li>Configuración, pruebas e integración de sistemas de comunicaciones, incluyendo validación funcional y de ciberseguridad (IEC 62443).</li>
+            <li>Realización de pruebas FAT e integración en laboratorio, así como soporte técnico durante SAT en campo y resolución de incidencias.</li>
+            <li>Redacción de documentación técnica, especificaciones y procedimientos de prueba conforme a estándares EN50128 y EN50129.</li> 
+            <li>Trabajo en equipos internacionales (Alemania, Rumanía, España).</li>
+            <li>Uso avanzado de Linux, contenedores (Docker, Kubernetes) y herramientas de red. Automatización de procesos y pipelines CI/CD con Jenkins y scripting.</li>
+        </ul>
+
+        <h3 style="text-align: right;">Software Development Engineer 
+        <br style="text-align: right;"> Thales (división adquirida por Hitachi Rail) — Septiembre 2022 – Septiembre 2023</h3>
+
+        <ul class="word-bullets">
+            <li>Desarrollo de software embebido en C para el circuito de vía de Thales (TTC, ThalesTrack Circuit).</li>
+            <li>Pruebas de caja blanca y caja negra, siguiendo los estándares ferroviarios.</li>
+            <li>Desarrollo de frameworks para automatización en C, C# y Java.</li>
+            <li>Redacción de documentación técnica, especificaciones y procedimientos de prueba conforme a estándares EN50128 y EN50129.</li> 
+            <li>Experiencia práctica con VLAN, QoS y configuraciones de red.</li>
+            <li>Soporte técnico otros equipo y resolución de incidencias.</li>
+        </ul>
+
+        <h3 style="text-align: right;">Test Engineer Intern  
+        <br style="text-align: right;"> Thales — Noviembre 2021 – Agosto 2022</h3>
+
+        <ul class="word-bullets">
+            <li>Integración y pruebas de sistemas embebidos y de comunicaciones.</li>
+            <li>Automatización de pruebas en C y Java.</li>
+            <li>Análisis de código en C, C++ y Java.</li>
+            <li>Procesamiento automatizado de datos mediante PowerBI.</li> 
+        </ul>
+
+        <h3 style="text-align: right;">Automation Technician  
+        <br style="text-align: right;"> EYP SCAP S.A. — Marzo 2021 – Agosto 2021</h3>
+
+        <ul class="word-bullets">
+            <li>Integración y pruebas de sistemas embebidos y de comunicaciones.</li>
+            <li>Automatización de pruebas en C y Java.</li>
+            <li>Análisis de código en C, C++ y Java.</li>
+            <li>Procesamiento automatizado de datos mediante PowerBI.</li> 
+        </ul>
+
+        <h3>Habilidades Técnicas</h3>
+        <ul>
+            <li><strong>Programación:</strong> Python, Shell Script, Fortran, MATLAB/SIMULINK</li>
+            <li><strong>Sistemas y HPC:</strong> Linux, SLURM, MPI, OpenMP, Git</li>
+            <li><strong>Criptografía y ciberseguridad:</strong> OpenSSL, AES, RSA, DH, SHA-256, firmas y certificados digitales, PKI, TLS, HTTPS</li>
+            <li><strong>Áreas de especialización:</strong> Modelización matemática, simulación y métodos numéricos, optimización de algoritmos complejos, desarrollo de software científico, análisis y procesamiento de datos.</li>
+            <li><strong>Otros:</strong> VSCode, LaTeX, Microsoft Office, Permiso B de conducir</li>
+            <li><strong>Idiomas:</strong> Español (Nativo), Inglés (Avanzado)</li>
+        </ul>
+
+
+    </section>
+
+    <!-- DEGREES SECTION -->
+    <section id="degrees" class="section-card">
+        <h2>Formación</h2>
+
+        <ul>
+            <li><strong>Máster en Automática y Robótica</strong>, Universidad Politécnica de Madrid, 2024</li>
+            <li><strong>Grado en Ingeniería Electrónica Industrial y Automática </strong>, Universidad Politécnica de Madrid, 2021</li>
+        </ul>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="section-card">
+        <h2>Certificados</h2>
+
+        <ul>
+            <li>IEC 62443 Foundational and practical Training, Hitachi (2025)</li>
+            <li>Cloud Computing, Global knowledge (2025)</li>
+            <li>Introduction to Cybersecurity, Hitachi (2024)</li>
+            <li>Curso de iniciación a la señalización Ferroviaria, Exceltic (2023)</li>
+            <li>TOEIC Nivel C1 (2020)</li>
+        </ul>
+    </section>
+
+</div>
+
+</body>
+</html>
